@@ -19,10 +19,5 @@ public class BulletCannon : MonoBehaviour
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        hasHit = true;
-        rb.velocity = Vector2.zero;
-        rb.isKinematic = true;
-    }
+  
 }
